@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block title %}FollowindexController#index{% endblock %}
+
+{% block content %}
+        <a href="/followindex/new">New</a>
+
+{% if result %}
+        <ul>
+{% for r in result %}
+            <li><a href="/followindex/show/{{ r.key }}">{{ r.key }}</a></li>
+{% endfor %}
+        </ul>
+{% endif %}
+{% endblock %}

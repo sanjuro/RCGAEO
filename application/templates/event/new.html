@@ -1,0 +1,12 @@
+{% extends "../base.html" %}
+
+{% block title %}EventController#new{% endblock %}
+
+{% block content %}
+        <form action="/event/create" method="post">
+            <fieldset>
+            <legend>New Event</legend>
+                <p><input type="submit" value="Submit"></p>
+            </fieldset>
+        </form>
+{% endblock %}

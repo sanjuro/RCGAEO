@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+{% block title %}Rapid Comment - {{ event.title }} {% endblock %}
+{% block pagetitle %}Rapid Comment - {{ event.title }} {% endblock %}
+
+{% block content %}
+<section id="eventdetail">
+  <h2>Event: {{ event.title }}</h2>
+  <span>{{ event.description }}</span>
+  <br>
+</section>
+
+<section id="comments">
+
+</section>
+{% endblock %}

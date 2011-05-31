@@ -1,0 +1,74 @@
+body {
+	font-family: "myriad-pro-1","myriad-pro-2",Arial,Helvetica,sans-serif;
+	padding: 0;
+	margin: 0;	
+}
+a {
+	color: #256188;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;	
+}
+h2 {
+	color: #720713;	
+	font-size: 1em;
+}
+header {
+	background-color: #256188;
+	color: #FFF;
+	height: 40px;
+}
+nav {
+	background-color: #0D0D0D;
+	border-top: 1px solid #153B5C;
+	border-bottom: 1px solid #515151;
+	font-size: 0.9em;
+}
+nav a {
+	color: #FFF;
+}
+article {
+	background-color: #F3F3F3;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 0 5px;
+}
+footer {
+	background-color: #0D0D0D;
+	border-top: 1px solid #515151;
+	border-bottom: 1px solid #DDDDDD;
+	color: #FFF;
+}
+footer a {
+	color: #FFF;	
+}
+ul#navigation  {
+	margin: 0px;
+	padding-left: 0px;	
+}
+ul#navigation li {
+	display: inline;
+}
+
+.event, .comment{
+	border-bottom:1px solid #E9E9E9;
+	padding-bottom:5px;
+	margin: 0px;
+	}
+.event_date{
+	font-size: 0.8em;
+	margin: 3px 0px;
+	}
+.event_title{
+	font-weight: bold;
+	margin: 3px 0px;
+	}
+.comment_date{
+	color: #666666;
+	font-size: 0.8em;
+	font-weight: bold;
+	}
+.comment_text{
+	
+	}

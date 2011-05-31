@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block title %}ParticipantController#index{% endblock %}
+
+{% block content %}
+        <a href="/participant/new">New</a>
+
+{% if result %}
+        <ul>
+{% for r in result %}
+            <li><a href="/participant/show/{{ r.key }}">{{ r.key }}</a></li>
+{% endfor %}
+        </ul>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/samirf_capetown/!svn/ver/107/trunk/templatetags
+END
+userprofilefilters.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/samirf_capetown/!svn/ver/78/trunk/templatetags/userprofilefilters.py
+END
+iftag.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/samirf_capetown/!svn/ver/72/trunk/templatetags/iftag.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/samirf_capetown/!svn/ver/71/trunk/templatetags/__init__.py
+END
+templatefilters.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/samirf_capetown/!svn/ver/107/trunk/templatetags/templatefilters.py
+END
+variablestag.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/samirf_capetown/!svn/ver/100/trunk/templatetags/variablestag.py
+END
+datetimefilters.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/samirf_capetown/!svn/ver/90/trunk/templatetags/datetimefilters.py
+END

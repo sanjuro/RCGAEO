@@ -1,0 +1,12 @@
+{% extends "../base.html" %}
+
+{% block title %}CategoryController#new{% endblock %}
+
+{% block content %}
+        <form action="/category/create" method="post">
+            <fieldset>
+            <legend>New Category</legend>
+                <p><input type="submit" value="Submit"></p>
+            </fieldset>
+        </form>
+{% endblock %}

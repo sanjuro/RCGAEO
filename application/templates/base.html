@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>  
+  <head>
+    <title>{% block title %}{% endblock %} - Rapid Comment - rapid event connections</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    {% block head %}{% endblock %}
+    <script src="http://www.google.com/jsapi"></script>
+    <script>
+      google.load("jquery", "1.4.1");
+    </script>
+  </head>
+  <body>
+  		<header>
+  			Rapid Comment - rapid event connections
+  		<nav>
+	  	<ul id="navigation">
+	  		<li><a href="/">Home</a></li>
+			{% if user %}
+	  		<li>
+	                 <a href="/profile">Profile</a>
+	  		</li>
+	        {% endif %}
+	        
+	  		<li>
+	           <a href="/news">News</a>
+	  		</li>
+	
+	 		{% if admin %}
+	  		<li>
+	                 <a href="/admin">Admin</a>	
+	  		</li>
+	  		{% endif %} 
+	  		
+			{% if user %}  		
+	  		<li>
+	            <a href="{{ logout_url }}">Logout</a>
+	  		</li>
+	        {% else %}
+	        <li>
+	            <a href="/loginPageView">Login</a>
+	        </li>
+	        {% endif %}
+	  	</ul>
+	  	</nav>
+  		</header>
+        <article>
+			<section id="login">
+			{% if user %}
+					<!-- Search will come here -->
+			{% else %}
+					<!-- Login links -->
+					<span class="frontpageheading">Login via</span><br>
+					<a href="{{ login_url }}">Gmail&nbsp;<img src="/img/google_icon.png" border="0" /></a>
+					<a href="/facebookLogin">Facebook&nbsp;<img src="/img/facebook_icon.png" border="0" /></a>
+					<a href="/twitterLogin">Twitter&nbsp;<img src="/img/twitter_icon.png" border="0" /></a>
+					<br><br>
+			{% endif %}
+			</section>
+             {% block content %}C O N T E N T{% endblock %}
+        </article>
+        <footer>
+              &#169; 2011 - RapidComment | <a style="font-size: 7pt;" href="mailto:info@rapidcomment.com">info@rapidcomment.com</a>
+        </footer>
+  </body>
+</html> 
+

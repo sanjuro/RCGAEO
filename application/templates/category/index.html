@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block title %}CategoryController#index{% endblock %}
+
+{% block content %}
+        <a href="/category/new">New</a>
+
+{% if result %}
+        <ul>
+{% for r in result %}
+            <li><a href="/category/show/{{ r.key }}">{{ r.key }}</a></li>
+{% endfor %}
+        </ul>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block title %}EventController#index{% endblock %}
+
+{% block content %}
+        <a href="/event/new">New</a>
+
+{% if result %}
+        <ul>
+{% for r in result %}
+            <li><a href="/event/show/{{ r.key }}">{{ r.key }}</a></li>
+{% endfor %}
+        </ul>
+{% endif %}
+{% endblock %}

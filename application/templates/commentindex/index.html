@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block title %}CommentindexController#index{% endblock %}
+
+{% block content %}
+        <a href="/commentindex/new">New</a>
+
+{% if result %}
+        <ul>
+{% for r in result %}
+            <li><a href="/commentindex/show/{{ r.key }}">{{ r.key }}</a></li>
+{% endfor %}
+        </ul>
+{% endif %}
+{% endblock %}

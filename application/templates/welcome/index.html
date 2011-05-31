@@ -1,0 +1,56 @@
+{% extends "../base.html" %}
+{% block title %}RapidComment - rapid sport connections{% endblock %}
+{% block pagetitle %}Home{% endblock %}
+
+{% block content %}
+
+<!-- Show pre-match, match and post match comments -->
+<!-- Differentiate with teams using colors -->
+<!-- Sport and league selection -->
+
+<section id="events">
+<h2>Up and Coming Events</h2>
+<!--  Show Up and Coming Events -->
+{% if events %}
+    {% for event in events %}
+    <p class="event">
+    <span class="event_date">Start: {{ event.event_start }}</span>
+	<br />
+    <span class="event_title"><a href="/event/show/{{ event.key }}">{{ event.title }}</a></span>
+    </p>
+    {% endfor %}
+{% else %}
+    <h3>No Events</h3>
+{% endif %}
+
+    {% if user %}
+   	 <!-- Reminders will come here -->
+    {% endif %}
+</section>
+
+<br>
+<section id="comments">
+<h2>Latest Comments </h2>
+<!--  Show new Comments -->
+{% if comments %}
+    {% for comment in comments %}
+    <p class="comment">
+    <span class="comment_text">{{ comment.text }}</span>
+    <br />
+    <span class="comment_date">Posted at: {{ comment.commented_at }}</span>
+    </p>
+    {% endfor %}
+{% else %}
+    <h3>No Comments</h3>
+{% endif %}
+</section>
+
+<br>
+
+
+<span class="frontpageheading">
+Logged in users ({{totalusercount}})
+</span>
+<br><br>
+
+{% endblock %}

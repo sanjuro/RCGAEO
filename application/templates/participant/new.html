@@ -1,0 +1,12 @@
+{% extends "../base.html" %}
+
+{% block title %}ParticipantController#new{% endblock %}
+
+{% block content %}
+        <form action="/participant/create" method="post">
+            <fieldset>
+            <legend>New Participant</legend>
+                <p><input type="submit" value="Submit"></p>
+            </fieldset>
+        </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "../base.html" %}
+
+{% block title %}ProfileController#new{% endblock %}
+
+{% block content %}
+        <form action="/profile/create" method="post">
+            <fieldset>
+            <legend>New Profile</legend>
+                <p><input type="submit" value="Submit"></p>
+            </fieldset>
+        </form>
+{% endblock %}

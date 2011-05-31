@@ -1,0 +1,12 @@
+{% extends "../base.html" %}
+
+{% block title %}CommentController#new{% endblock %}
+
+{% block content %}
+        <form action="/comment/create" method="post">
+            <fieldset>
+            <legend>New Comment</legend>
+                <p><input type="submit" value="Submit"></p>
+            </fieldset>
+        </form>
+{% endblock %}
